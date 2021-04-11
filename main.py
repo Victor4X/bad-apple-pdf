@@ -14,15 +14,8 @@ FONT_SIZE = 10
 X_OFFSET, Y_OFFSET = 9, HEIGHT-204 
 
 # Set font
-pdfmetrics.registerFont(TTFont("FreeMono","C:\\Users\\viggo\\AppData\\Local\\Microsoft\\Windows\\Fonts\\FreeMono.ttf"))
+pdfmetrics.registerFont(TTFont("FreeMono","data\\FreeMono.ttf"))
 canvas.setFont("FreeMono", FONT_SIZE)
-
-# Draw blue text one inch from the left and ten
-# inches from the bottom
-
-
-print(canvas.getAvailableFonts())
-# exit()
 
 canvas.setFillColor(blue)
 with open("data/data.json", "r") as read_file:
